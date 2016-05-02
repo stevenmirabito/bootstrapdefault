@@ -125,7 +125,7 @@
         {/foreach}
     {/if}
 
-    <div class="subnav subnav-fixed" role="navigation">
+    <div class="subnav subnav-fixed navbar-default">
         <div class="container">
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
