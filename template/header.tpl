@@ -22,7 +22,7 @@
     {/if}
 
     <title>{if $PAGE_TITLE!=l10n('Home') && $PAGE_TITLE!=$GALLERY_TITLE}{$PAGE_TITLE} | {/if}{$GALLERY_TITLE}</title>
-    <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}themes/csh/img/favicon.ico">
     <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}">
     <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php">
     {if isset($first.U_IMG)   }
