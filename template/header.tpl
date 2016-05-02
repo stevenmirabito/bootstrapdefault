@@ -125,7 +125,7 @@
         {/foreach}
     {/if}
 
-    <nav class="navbar navbar-inverse" role="navigation">
+    <div class="subnav subnav-fixed" role="navigation">
         <div class="container">
             <div class="navbar-right">
                 <ul class="nav navbar-nav">
@@ -248,6 +248,6 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </div>
 
     <!-- End of header.tpl -->

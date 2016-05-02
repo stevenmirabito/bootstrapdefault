@@ -6,15 +6,16 @@
 
 {include file='infos_errors.tpl'}
 
-<ol class="breadcrumb">
-    <li>{$TITLE}</li>
-    {if isset($chronology.TITLE)}
-        <li>{$chronology.TITLE}</li>
-    {/if}
-</ol>
-
 <a name="content"></a>
 <div class="container">
+
+    <ol class="breadcrumb">
+        <li>{$TITLE}</li>
+        {if isset($chronology.TITLE)}
+            <li>{$chronology.TITLE}</li>
+        {/if}
+    </ol>
+
     {if !empty($PLUGIN_INDEX_CONTENT_BEGIN)}{$PLUGIN_INDEX_CONTENT_BEGIN}{/if}
 
     <!--
