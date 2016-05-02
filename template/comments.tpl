@@ -1,11 +1,4 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
-                        href>{'User comments'|@translate}</a></div>
-        </div>
-    </div>
-</nav>
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation"></nav>
 
 {include file='infos_errors.tpl'}
 
@@ -13,6 +6,11 @@
 {if $theme_config->comments_type == 'disqus' and !empty($shortname)}
 {else}
     <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+            <li>{'User comments'|@translate}</li>
+        </ol>
+
         <form action="{$F_ACTION}" method="get" class="form-horizontal">
             <div class="panel panel-primary">
                 <div class="panel-heading">
