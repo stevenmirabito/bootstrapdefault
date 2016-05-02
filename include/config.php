@@ -101,7 +101,7 @@ class Config {
                     $this->config[$key] = !empty($value) ? $value : null;
                     break;
                 case self::TYPE_BOOL:
-                    $this->config[$key] = ($value || $value == 'true') ? true : false;
+                    $this->config[$key] = $value ? true : false;
                     break;
                 case self::TYPE_FILE:
                     $this->saveFile($key, $value);

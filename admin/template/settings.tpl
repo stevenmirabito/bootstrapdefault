@@ -22,13 +22,10 @@
             <legend>{'Jumbotron display'|@translate}</legend>
             <ul>
                 <li>
-                    <label class="radio">
-                        <input type="radio" name="jumbotron" value="true"{if $theme_config->jumbotron == 'true'} checked="checked"{/if} />
+                    <label class="font-checkbox">
+                        <span class="icon-check"></span>
+                        <input type="checkbox" name="jumbotron"{if $theme_config->jumbotron} checked="checked"{/if}>
                         {'Enabled'|@translate}
-                    </label>
-                    <label class="radio">
-                        <input type="radio" name="jumbotron" value="false"{if $theme_config->jumbotron == 'false'} checked="checked"{/if} />
-                        {'Disabled'|@translate}
                     </label>
                 </li>
             </ul>
