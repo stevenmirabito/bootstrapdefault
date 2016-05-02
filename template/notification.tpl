@@ -5,18 +5,16 @@
           href="{$U_FEED}">
 {/html_head}
 
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
-                        href>{'Notification'|@translate}</a></div>
-        </div>
-    </div>
-</nav>
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation"></nav>
 
 {include file='infos_errors.tpl'}
 
 <div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+        <li>{'Notification'|@translate}</li>
+    </ol>
+
     <div class="panel panel-primary">
         <div class="panel-heading">
             {'Notification'|@translate}
