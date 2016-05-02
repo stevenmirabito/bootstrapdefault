@@ -40,3 +40,4 @@ Clone this [Github repository](https://github.com/stevenmirabito/csh-piwigo.git)
 * [Bootstrap](http://getbootstrap.com/) - Included as a submodule
 * [Selectize.js](http://brianreavis.github.io/selectize.js/) - Included as a submodule (the bundled version
 with Piwigo 2.7.x is ignored in favour of the latest build with Bootstrap styling)
+* [CSH Bootstrap Theme](https://github.com/ComputerScienceHouse/bootstrap-csh/) - Included as a submodule

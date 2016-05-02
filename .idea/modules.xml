@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../csh/.idea/bootstrapdefault.iml" filepath="$PROJECT_DIR$/../csh/.idea/bootstrapdefault.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/csh-piwigo.iml" filepath="$PROJECT_DIR$/.idea/csh-piwigo.iml" />
     </modules>
   </component>
 </project>
