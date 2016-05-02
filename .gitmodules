@@ -4,3 +4,6 @@
 [submodule "selectize.js"]
 	path = selectize.js
 	url = https://github.com/brianreavis/selectize.js.git
+[submodule "bootstrap-csh"]
+	path = bootstrap-csh
+	url = https://github.com/ComputerScienceHouse/bootstrap-csh.git
