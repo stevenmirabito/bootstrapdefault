@@ -8,9 +8,9 @@
     <div class="container">
         <section id="important-info">
             <h3>{$current.TITLE}</h3>
-{if isset($COMMENT_IMG)}
-            <h4 class="imageComment">{$COMMENT_IMG}</h4>
-{/if}
+            {if isset($COMMENT_IMG)}
+                <h4 class="imageComment">{$COMMENT_IMG}</h4>
+            {/if}
         </section>
     </div>
-<div>
+    <div>

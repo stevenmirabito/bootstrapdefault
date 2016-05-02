@@ -28,7 +28,7 @@
     <div class="col-inner">
 		<a class="col-thumbnail" href="{$thumbnail.URL}">
             <div class="placeholder-{$width}">
-			    <img {if $derivative->is_cached()}src="{$derivative->get_url()}"{else}src="{$ROOT_URL}themes/bootstrapdefault/img/transparent.png"
+			    <img {if $derivative->is_cached()}src="{$derivative->get_url()}"{else}src="{$ROOT_URL}themes/csh/img/transparent.png"
                      data-src="{$derivative->get_url()}"{/if}
                      alt="{$thumbnail.TN_ALT}"
                      title="{$thumbnail.TN_TITLE}">
@@ -39,7 +39,7 @@
             <h3 class="title">
                 <a href="{$thumbnail.URL}" class="ellipsis{if !empty($thumbnail.icon_ts)} recent{/if}">{$thumbnail.NAME}</a>
 {if !empty($thumbnail.icon_ts)}
-                <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent.png" alt="(!)">
+                <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}theme/csh/img/recent.png" alt="(!)">
 {/if}
             </h3>
 {if isset($thumbnail.NB_COMMENTS)}

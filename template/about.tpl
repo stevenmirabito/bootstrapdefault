@@ -1,7 +1,8 @@
 <nav class="navbar navbar-default" role="navigation">
     <div class="container">
         <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a href>{'About'|@translate}</a></div>
+            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
+                        href>{'About'|@translate}</a></div>
         </div>
     </div>
 </nav>
@@ -14,17 +15,17 @@
             {'About'|@translate}
         </div>
         <div class="panel-body">
-{$ABOUT_MESSAGE}
-{if isset($THEME_ABOUT) }
-            <ul>
-                <li>{$THEME_ABOUT}</li>
-            </ul>
-{/if}
-{if not empty($about_msgs)}
-{foreach from=$about_msgs item=elt}
-{$elt}
-{/foreach}
-{/if}
+            {$ABOUT_MESSAGE}
+            {if isset($THEME_ABOUT) }
+                <ul>
+                    <li>{$THEME_ABOUT}</li>
+                </ul>
+            {/if}
+            {if not empty($about_msgs)}
+                {foreach from=$about_msgs item=elt}
+                    {$elt}
+                {/foreach}
+            {/if}
         </div>
     </div>
 </div>
