@@ -239,7 +239,7 @@
                     <dt>{'Who can see this photo?'|@translate}</dt>
                     <dd>
                         <div class="dropdown">
-                            <button class="btn btn-default dropdown-toggle ellipsis" type="button"
+                            <button class="btn btn-csh dropdown-toggle ellipsis" type="button"
                                     id="dropdownPermissions" data-toggle="dropdown" aria-expanded="true">
                                 {$available_permission_levels[$current.level]}
                                 <span class="caret"></span>
@@ -446,7 +446,7 @@
                                                       cols="50">{$comment_add.CONTENT}</textarea>
                                         </div>
                                         <input type="hidden" name="key" value="{$comment_add.KEY}">
-                                        <button type="submit" class="btn btn-default">{'Submit'|@translate}</button>
+                                        <button type="submit" class="btn btn-csh">{'Submit'|@translate}</button>
                                     </form>
                                 </div>
                             {/if}

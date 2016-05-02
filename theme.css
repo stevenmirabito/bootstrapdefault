@@ -3,7 +3,7 @@
  */
 
 body {
-    padding-top: 100px;
+    padding-top: 120px;
     background: #fafafa;
 }
 
@@ -91,6 +91,46 @@ body {
 .pagination > .active > span:hover {
     background-color: #b0197e;
     border-color: #b0197e;
+}
+
+/*
+ * Sidebar
+ */
+
+#sidebar {
+    box-shadow: none;
+    z-index: 0;
+}
+
+#sidebar .handle {
+    background-color: #b0197e;
+    border: none;
+}
+
+/*
+ * Buttons
+ */
+
+.btn-csh {
+    background-color: #B0197E;
+    color: #FFF;
+    transition: background-color .1s ease-in;
+    -webkit-transition: background-color .1s ease-in;
+    -o-transition: background-color .1s ease-in;
+    -moz-transition: background-color .1s ease-in;
+    -ms-transition: background-color .1s ease-in;
+
+}
+
+.btn-csh:hover, .csh-btn:focus {
+    background-color: #861360;
+    color: #FFF;
+
+}
+
+.btn-csh:active {
+    background-color: #701050;
+    color: #FFF;
 }
 
 /*
