@@ -195,6 +195,7 @@ body#thePopuphelpPage .navbar-toggle {
 
 #sidebar {
     z-index: 0 !important;
+    top: 0;
 }
 
 #sidebar .handle {
