@@ -145,6 +145,11 @@ body#thePopuphelpPage .navbar-toggle {
     color: #FFF;
 }
 
+/* Upload Button */
+#uploadForm > p:nth-child(5) {
+    text-align: center;
+}
+
 /*
  * Bootstrap Default theme styles
  */
