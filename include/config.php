@@ -14,6 +14,7 @@ class Config {
 
     const KEY_BOOTSTRAP_THEME = 'bootstrap_theme';
 
+    const KEY_JUMBOTRON = 'jumbotron';
     const KEY_PICTURE_PAGE = 'picture_page';
 
     const KEY_SOCIAL_ENABLED = 'social_enabled';
@@ -30,6 +31,7 @@ class Config {
 
     private $defaults = array(
         self::KEY_BOOTSTRAP_THEME => 'csh',
+        self::KEY_JUMBOTRON => false,
         self::KEY_PICTURE_PAGE => 'normal',
         self::KEY_SOCIAL_ENABLED => true,
         self::KEY_SOCIAL_TWITTER => true,
@@ -43,6 +45,7 @@ class Config {
 
     private $types = array(
         self::KEY_BOOTSTRAP_THEME => self::TYPE_STRING,
+        self::KEY_JUMBOTRON => self::TYPE_BOOL,
         self::KEY_PICTURE_PAGE => self::TYPE_STRING,
         self::KEY_SOCIAL_ENABLED => self::TYPE_BOOL,
         self::KEY_SOCIAL_TWITTER => self::TYPE_BOOL,
@@ -98,7 +101,7 @@ class Config {
                     $this->config[$key] = !empty($value) ? $value : null;
                     break;
                 case self::TYPE_BOOL:
-                    $this->config[$key] = $value ? true : false;
+                    $this->config[$key] = ($value || $value == 'true') ? true : false;
                     break;
                 case self::TYPE_FILE:
                     $this->saveFile($key, $value);

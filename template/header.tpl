@@ -107,7 +107,7 @@
         </nav>
     {/if}
 
-    {if !isset($slideshow) and ($BODY_ID != 'thePicturePage' or $theme_config->picture_page == 'normal')}
+    {if !isset($slideshow) and ($BODY_ID != 'thePicturePage' or $theme_config->picture_page == 'normal') and $theme_config->jumbotron}
         <div class="jumbotron">
             <div class="container">
                 <div id="theHeader">{$PAGE_BANNER}</div>
