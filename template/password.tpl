@@ -1,16 +1,14 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a href>{$title}</a>
-            </div>
-        </div>
-    </div>
-</nav>
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation"></nav>
 
 {include file='infos_errors.tpl'}
 
 {if $action ne 'none'}
     <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+            <li>{$title}</li>
+        </ol>
+
         <form id="lostPassword" action="{$form_action}?action={$action}{if isset($key)}&amp;key={$key}{/if}"
               method="post" class="form-horizontal">
             <div class="panel panel-primary">
