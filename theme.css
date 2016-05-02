@@ -30,6 +30,11 @@ body {
     display: inline;
 }
 
+.profile-picture {
+    width: 18px;
+    height: 18px;
+}
+
 .navbar .dropdown li.active > a {
     color: #ffffff !important;
 }
