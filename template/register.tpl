@@ -1,15 +1,13 @@
-<nav class="navbar navbar-default" role="navigation">
-    <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
-                        href>{'Registration'|@translate}</a></div>
-        </div>
-    </div>
-</nav>
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation"></nav>
 
 {include file='infos_errors.tpl'}
 
 <div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+        <li>{'Registration'|@translate}</li>
+    </ol>
+
     <form method="post" action="{$F_ACTION}" class="form-horizontal" name="register_form">
         <div class="panel panel-primary">
             <div class="panel-heading">
