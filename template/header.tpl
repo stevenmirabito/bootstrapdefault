@@ -49,6 +49,9 @@
 {if $theme_config->bootstrap_theme == 'default'}
 {combine_css path="themes/csh/bootstrap/dist/css/bootstrap-theme.min.css" order=0}
 {/if}
+{if $theme_config->bootstrap_theme == 'csh'}
+    {combine_css path="themes/csh/bootstrap-csh/release/members-flat.min.css" order=0}
+{/if}
 {if file_exists("local/csh/custom.css")}
 {combine_css path="local/csh/custom.css" order=10}
 {/if}

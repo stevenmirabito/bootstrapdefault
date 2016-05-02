@@ -13,6 +13,7 @@
                     <select name="bootstrap_theme">
                         <option value="none"{if $theme_config->bootstrap_theme == 'none'} selected="selected"{/if}>None</option>
                         <option value="default"{if $theme_config->bootstrap_theme == 'default'} selected="selected"{/if}>Default</option>
+                        <option value="csh"{if $theme_config->bootstrap_theme == 'csh'} selected="selected"{/if}>CSH</option>
                     </select>
                 </li>
             </ul>
