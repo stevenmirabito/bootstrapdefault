@@ -289,6 +289,7 @@
                         <span class="count">{$INFO_VISITS}</span>
                     </div>
                 {/if}
+                {if isset($rating.marks)}
                 <div id="rating">
                     <dl class="dl-horizontal">
                         <dt>{'Average rating'|@translate} <span
@@ -340,6 +341,7 @@
                         </dd>
                     </dl>
                 </div>
+                {/if}
             </section>
         </div>
     </div>
