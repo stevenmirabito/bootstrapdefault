@@ -75,6 +75,11 @@
 
 {if $display_mode == 'letters' and isset($letters)}
     <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+            <li>{'Tags'|@translate}</li>
+        </ol>
+
         <div id="tagLetters">
             <div class="menu row">
                 {foreach from=$letters item=letter}
