@@ -1,7 +1,12 @@
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img
-                src="https://profiles.csh.rit.edu/image/{$USERNAME}" class="profile-picture"> {$USERNAME} <span
-                class="caret"></span></a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        {if isset($U_LOGIN)}
+            <img src="https://profiles.csh.rit.edu/image/{$USERNAME}" class="profile-picture"> {$USERNAME}
+        {else}
+            My Account
+        {/if}
+        <span class="caret"></span>
+    </a>
     <ul class="dropdown-menu" role="menu">
         {strip}
             {if isset($U_LOGIN)}
