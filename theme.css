@@ -44,6 +44,10 @@ body {
     margin-bottom: 0;
 }
 
+.subnav ul.navbar-nav:first-of-type {
+    margin-left: -15px;
+}
+
 /* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
 .subnav-fixed {
     position: fixed;
