@@ -1,9 +1,5 @@
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
-                        href>{'Tags'|@translate}</a></div>
-        </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav">
                 {if $display_mode == 'letters'}
@@ -31,6 +27,11 @@
 
 {if $display_mode == 'cloud' and isset($tags)}
     <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+            <li>{'Tags'|@translate}</li>
+        </ol>
+
         {if $theme_config->tag_cloud_type == 'basic'}
             <div id="tagCloud">
                 {foreach from=$tags item=tag}
