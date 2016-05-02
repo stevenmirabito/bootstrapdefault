@@ -202,6 +202,10 @@
                             </a>{/strip}
                     </li>
                 {/if}
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <ul class="nav navbar-nav">
                 {if isset($U_MODE_FLAT)}
                     <li>
                         {strip}<a href="{$U_MODE_FLAT}" title="{'display all photos in all sub-albums'|@translate}"

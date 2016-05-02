@@ -190,10 +190,6 @@ div#the_page {
     margin-right: 0;
 }
 
-.jumbotron {
-    margin-bottom: 0px;
-}
-
 @media screen and (min-width: 768px) {
     .jumbotron h1,
     .jumbotron .h1 {
