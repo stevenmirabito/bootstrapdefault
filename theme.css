@@ -52,27 +52,11 @@ body {
     right: 0;
     z-index: 1020; /* 10 less than .navbar-fixed to prevent any overlap */
     border-width: 0 0 1px; /* drop the border on the fixed edges */
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    border-radius: 0;
-}
-
-.subnav-fixed .nav {
-    width: 1170px;
-    margin: 0 auto;
-    margin-left: -12px;
-    padding: 0 1px;
-}
-
-.subnav .nav > li:first-child > a,
-.subnav .nav > li:first-child > a:hover {
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
     border-radius: 0;
 }
 
 @media (max-width: 979px) {
-    /* TODO: Responsiuve Subnav */
+    /* TODO: Responsive Subnav */
 }
 
 /*
