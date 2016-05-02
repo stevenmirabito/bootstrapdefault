@@ -1,5 +1,5 @@
 <li class="dropdown">
-    <a href="#" class="dropdown-toggle" data-toggle="dropdown">{'Menu'|@translate} <span class="caret"></span></a>
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-flash" aria-hidden="true"></span> {'Actions'|@translate} <span class="caret"></span></a>
     <ul class="dropdown-menu" role="menu">
 {if isset($block->data.qsearch) and  $block->data.qsearch==true}
     <div class="navbar-form-desktop">
