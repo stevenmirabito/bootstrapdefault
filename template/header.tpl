@@ -127,9 +127,9 @@
         {/foreach}
     {/if}
 
-    <nav class="navbar navbar-default subnav subnav-fixed">
+    <nav class="navbar navbar-default subnav subnav-fixed" role="navigation">
         <div class="container">
-            <div class="collapse navbar-collapse">
+            <div>
                 <ul class="nav navbar-nav">
                     {if !empty($image_orders)}
                         <li class="dropdown">
@@ -209,36 +209,36 @@
                     {/if}
                 </ul>
             </div>
-        </div>
-        <div class="navbar-right">
-            <ul class="nav navbar-nav">
-                {if isset($U_MODE_FLAT)}
-                    <li>
-                        {strip}<a href="{$U_MODE_FLAT}" title="{'display all photos in all sub-albums'|@translate}"
-                                  rel="nofollow">
-                            <span class="glyphicon glyphicon-th-large"></span><span
-                                    class="glyphicon-text">{'display all photos in all sub-albums'|@translate}</span>
-                            </a>{/strip}
-                    </li>
-                {/if}
-                {if isset($U_MODE_NORMAL)}
-                    <li>
-                        {strip}<a href="{$U_MODE_NORMAL}" title="{'return to normal view mode'|@translate}">
-                            <span class="glyphicon glyphicon-home"></span><span
-                                    class="glyphicon-text">{'return to normal view mode'|@translate}</span>
-                            </a>{/strip}
-                    </li>
-                {/if}
-                {if !empty($PLUGIN_INDEX_BUTTONS)}{foreach from=$PLUGIN_INDEX_BUTTONS item=button}
-                    <li>{$button}</li>{/foreach}{/if}
-                {if !empty($PLUGIN_INDEX_ACTIONS)}{$PLUGIN_INDEX_ACTIONS}{/if}
-                {if (!empty($CATEGORIES) && !isset($GDThumb)) || (!empty($THUMBNAILS) && !isset($GThumb) && !isset($GDThumb)) }
-                    <li id="btn-grid"{if $smarty.cookies.view != 'list'} class="active"{/if}><a href="#"><span
-                                    class="glyphicon glyphicon-th"></span></a></li>
-                    <li id="btn-list"{if $smarty.cookies.view == 'list'} class="active"{/if}><a href="#"><span
-                                    class="glyphicon glyphicon-th-list"></span></a></li>
-                {/if}
-            </ul>
+            <div class="navbar-right">
+                <ul class="nav navbar-nav">
+                    {if isset($U_MODE_FLAT)}
+                        <li>
+                            {strip}<a href="{$U_MODE_FLAT}" title="{'display all photos in all sub-albums'|@translate}"
+                                      rel="nofollow">
+                                <span class="glyphicon glyphicon-th-large"></span><span
+                                        class="glyphicon-text">{'display all photos in all sub-albums'|@translate}</span>
+                                </a>{/strip}
+                        </li>
+                    {/if}
+                    {if isset($U_MODE_NORMAL)}
+                        <li>
+                            {strip}<a href="{$U_MODE_NORMAL}" title="{'return to normal view mode'|@translate}">
+                                <span class="glyphicon glyphicon-home"></span><span
+                                        class="glyphicon-text">{'return to normal view mode'|@translate}</span>
+                                </a>{/strip}
+                        </li>
+                    {/if}
+                    {if !empty($PLUGIN_INDEX_BUTTONS)}{foreach from=$PLUGIN_INDEX_BUTTONS item=button}
+                        <li>{$button}</li>{/foreach}{/if}
+                    {if !empty($PLUGIN_INDEX_ACTIONS)}{$PLUGIN_INDEX_ACTIONS}{/if}
+                    {if (!empty($CATEGORIES) && !isset($GDThumb)) || (!empty($THUMBNAILS) && !isset($GThumb) && !isset($GDThumb)) }
+                        <li id="btn-grid"{if $smarty.cookies.view != 'list'} class="active"{/if}><a href="#"><span
+                                        class="glyphicon glyphicon-th"></span></a></li>
+                        <li id="btn-list"{if $smarty.cookies.view == 'list'} class="active"{/if}><a href="#"><span
+                                        class="glyphicon glyphicon-th-list"></span></a></li>
+                    {/if}
+                </ul>
+            </div>
         </div>
     </nav>
 
