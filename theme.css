@@ -98,7 +98,6 @@ body {
  */
 
 #sidebar {
-    box-shadow: none !important;
     z-index: 0 !important;
 }
 
