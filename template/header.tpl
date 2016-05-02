@@ -127,82 +127,88 @@
         {/foreach}
     {/if}
 
-    <div class="subnav subnav-fixed navbar-default">
+    <nav class="navbar navbar-default subnav subnav-fixed">
         <div class="container">
-            <ul class="nav navbar-nav">
-                {if !empty($image_orders)}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-sort"></span><span
-                                    class="glyphicon-text">{'Sort order'|@translate}</span><span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            {foreach from=$image_orders item=image_order name=loop}
-                                <li{if $image_order.SELECTED} class="active"{/if}><a href="{$image_order.URL}"
-                                                                                     rel="nofollow">{$image_order.DISPLAY}</a>
-                                </li>
-                            {/foreach}
-                        </ul>
-                    </li>
-                {/if}
-                {if !empty($image_derivatives)}
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                            <span class="glyphicon glyphicon-picture"></span><span
-                                    class="glyphicon-text">{'Photo sizes'|@translate}</span><span class="caret"></span>
-                        </a>
-                        <ul class="dropdown-menu" role="menu">
-                            {foreach from=$image_derivatives item=image_derivative name=loop}
-                                <li{if $image_derivative.SELECTED} class="active"{/if}><a href="{$image_derivative.URL}"
-                                                                                          rel="nofollow">{$image_derivative.DISPLAY}</a>
-                                </li>
-                            {/foreach}
-                        </ul>
-                    </li>
-                {/if}
-                {if isset($favorite)}
-                    <li>
-                        <a href="{$favorite.U_FAVORITE}" title="{'Delete all photos from your favorites'|@translate}"
-                           rel="nofollow">
-                            <span class="glyphicon glyphicon-heart"></span><span
-                                    class="glyphicon-text">{'Delete all photos from your favorites'|@translate}</span>
-                        </a>
-                    </li>
-                {/if}
-                {if isset($U_EDIT)}
-                    <li>
-                        <a href="{$U_EDIT}" title="{'Edit album'|@translate}">
-                            <span class="glyphicon glyphicon-pencil"></span><span
-                                    class="glyphicon-text">{'Edit'|@translate}</span>
-                        </a>
-                    </li>
-                {/if}
-                {if isset($U_CADDIE)}
-                    <li>
-                        <a href="{$U_CADDIE}" title="{'Add to caddie'|@translate}">
-                            <span class="glyphicon glyphicon-plus-sign"></span><span
-                                    class="glyphicon-text">{'Caddie'|@translate}</span>
-                        </a>
-                    </li>
-                {/if}
-                {if isset($U_SEARCH_RULES)}
-                    {combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
-                    <li>
-                        <a href="{$U_SEARCH_RULES}" onclick="bd_popup(this.href); return false;"
-                           title="{'Search rules'|@translate}" rel="nofollow">
-                            <span class="glyphicon glyphicon-search"></span><span class="glyphicon-text">(?)</span>
-                        </a>
-                    </li>
-                {/if}
-                {if isset($U_SLIDESHOW)}
-                    <li>
-                        {strip}<a href="{$U_SLIDESHOW}" title="{'slideshow'|@translate}" rel="nofollow">
-                            <span class="glyphicon glyphicon-play"></span><span
-                                    class="glyphicon-text">{'slideshow'|@translate}</span>
-                            </a>{/strip}
-                    </li>
-                {/if}
-            </ul>
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    {if !empty($image_orders)}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-sort"></span><span
+                                        class="glyphicon-text">{'Sort order'|@translate}</span><span
+                                        class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                {foreach from=$image_orders item=image_order name=loop}
+                                    <li{if $image_order.SELECTED} class="active"{/if}><a href="{$image_order.URL}"
+                                                                                         rel="nofollow">{$image_order.DISPLAY}</a>
+                                    </li>
+                                {/foreach}
+                            </ul>
+                        </li>
+                    {/if}
+                    {if !empty($image_derivatives)}
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <span class="glyphicon glyphicon-picture"></span><span
+                                        class="glyphicon-text">{'Photo sizes'|@translate}</span><span
+                                        class="caret"></span>
+                            </a>
+                            <ul class="dropdown-menu" role="menu">
+                                {foreach from=$image_derivatives item=image_derivative name=loop}
+                                    <li{if $image_derivative.SELECTED} class="active"{/if}><a
+                                                href="{$image_derivative.URL}"
+                                                rel="nofollow">{$image_derivative.DISPLAY}</a>
+                                    </li>
+                                {/foreach}
+                            </ul>
+                        </li>
+                    {/if}
+                    {if isset($favorite)}
+                        <li>
+                            <a href="{$favorite.U_FAVORITE}"
+                               title="{'Delete all photos from your favorites'|@translate}"
+                               rel="nofollow">
+                                <span class="glyphicon glyphicon-heart"></span><span
+                                        class="glyphicon-text">{'Delete all photos from your favorites'|@translate}</span>
+                            </a>
+                        </li>
+                    {/if}
+                    {if isset($U_EDIT)}
+                        <li>
+                            <a href="{$U_EDIT}" title="{'Edit album'|@translate}">
+                                <span class="glyphicon glyphicon-pencil"></span><span
+                                        class="glyphicon-text">{'Edit'|@translate}</span>
+                            </a>
+                        </li>
+                    {/if}
+                    {if isset($U_CADDIE)}
+                        <li>
+                            <a href="{$U_CADDIE}" title="{'Add to caddie'|@translate}">
+                                <span class="glyphicon glyphicon-plus-sign"></span><span
+                                        class="glyphicon-text">{'Caddie'|@translate}</span>
+                            </a>
+                        </li>
+                    {/if}
+                    {if isset($U_SEARCH_RULES)}
+                        {combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+                        <li>
+                            <a href="{$U_SEARCH_RULES}" onclick="bd_popup(this.href); return false;"
+                               title="{'Search rules'|@translate}" rel="nofollow">
+                                <span class="glyphicon glyphicon-search"></span><span class="glyphicon-text">(?)</span>
+                            </a>
+                        </li>
+                    {/if}
+                    {if isset($U_SLIDESHOW)}
+                        <li>
+                            {strip}<a href="{$U_SLIDESHOW}" title="{'slideshow'|@translate}" rel="nofollow">
+                                <span class="glyphicon glyphicon-play"></span><span
+                                        class="glyphicon-text">{'slideshow'|@translate}</span>
+                                </a>{/strip}
+                        </li>
+                    {/if}
+                </ul>
+            </div>
         </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav">
@@ -234,6 +240,6 @@
                 {/if}
             </ul>
         </div>
-    </div>
+    </nav>
 
     <!-- End of header.tpl -->
