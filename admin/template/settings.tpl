@@ -1,4 +1,4 @@
-{combine_css path="themes/bootstrapdefault/admin/css/admin.css"}
+{combine_css path="themes/csh/admin/css/admin.css"}
 {combine_script id='common' load='footer' path='admin/themes/default/js/common.js'}
 <div class="titrePage">
     <h2>{'Bootstrap Default'|@translate} {$TABSHEET_TITLE}</h2>

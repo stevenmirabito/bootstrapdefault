@@ -38,7 +38,7 @@
     <link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}">
 {/if}
 
-{combine_css path="themes/bootstrapdefault/bootstrap/dist/css/bootstrap.min.css" order=-20}
+{combine_css path="themes/csh/bootstrap/dist/css/bootstrap.min.css" order=-20}
 {foreach from=$themes item=theme}
 {if $theme.load_css}
     {combine_css path="themes/`$theme.id`/theme.css" order=-10}
@@ -47,12 +47,12 @@
 {/foreach}
 
 {if $theme_config->bootstrap_theme == 'default'}
-{combine_css path="themes/bootstrapdefault/bootstrap/dist/css/bootstrap-theme.min.css" order=0}
+{combine_css path="themes/csh/bootstrap/dist/css/bootstrap-theme.min.css" order=0}
 {/if}
-{if file_exists("local/bootstrapdefault/custom.css")}
-{combine_css path="local/bootstrapdefault/custom.css" order=10}
+{if file_exists("local/csh/custom.css")}
+{combine_css path="local/csh/custom.css" order=10}
 {/if}
-{combine_css path="themes/bootstrapdefault/fixplugins.css" order=1000000}
+{combine_css path="themes/csh/fixplugins.css" order=1000000}
 {get_combined_css}
 
 {if isset($U_PREFETCH)}
@@ -65,8 +65,8 @@
 {combine_script id='jquery'}
 {combine_script id='jquery-ajaxmanager' require='jquery' path='themes/default/js/plugins/jquery.ajaxmanager.js'}
 {combine_script id='thumbnails-loader' require='jquery-ajaxmanager' path='themes/default/js/thumbnails.loader.js'}
-{combine_script id='bootstrap' require='jquery' path="themes/bootstrapdefault/bootstrap/dist/js/bootstrap.min.js"}
-{combine_script id=$themeconf.name require='bootstrap' path="themes/bootstrapdefault/js/theme.js"}
+{combine_script id='bootstrap' require='jquery' path="themes/csh/bootstrap/dist/js/bootstrap.min.js"}
+{combine_script id=$themeconf.name require='bootstrap' path="themes/csh/js/theme.js"}
 {get_combined_scripts load='header'}
 
     <!--[if lt IE 7]>

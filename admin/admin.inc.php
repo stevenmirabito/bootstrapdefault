@@ -4,7 +4,7 @@ if (!defined('PHPWG_ROOT_PATH')) die('Hacking attempt!');
 
 // Includes
 include_once(PHPWG_ROOT_PATH . 'admin/include/tabsheet.class.php');
-require_once(PHPWG_THEMES_PATH . 'bootstrapdefault/include/config.php');
+require_once(PHPWG_THEMES_PATH . 'csh/include/config.php');
 
 // Constants
 define('THEME_ID', basename(dirname(dirname(__FILE__))));

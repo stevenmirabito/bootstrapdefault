@@ -1,5 +1,5 @@
 <?php
-namespace BootstrapDefault;
+namespace CSH;
 
 class ThemeController {
 
@@ -22,7 +22,7 @@ class ThemeController {
     private function setPluginWarnings() {
         global $pwg_loaded_plugins, $page;
         if (isset($pwg_loaded_plugins['language_switch'])) {
-            $page['errors'][] = l10n('Language Switch plugin is enabled but is not compatible with the Bootstrap Default theme. Please disable it and download the <a href="http://piwigo.org/ext/extension_view.php?eid=797" target="_new">Bootstrap Default Language Switch</a> instead.');
+            $page['errors'][] = l10n('Language Switch plugin is enabled but is not compatible with the CSH theme. Please disable it and download the <a href="http://piwigo.org/ext/extension_view.php?eid=797" target="_new">Bootstrap Default Language Switch</a> instead.');
         }
     }
 

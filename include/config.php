@@ -1,9 +1,9 @@
 <?php
-namespace BootstrapDefault;
+namespace CSH;
 
 class Config {
 
-    const CONF_PARAM = 'bootstrapdefault';
+    const CONF_PARAM = 'csh';
     const CONF_VERSION = 5;
 
     const TYPE_BOOL = 'bool';
@@ -88,7 +88,7 @@ class Config {
     }
 
     private function initFiles() {
-        $this->files[self::KEY_CUSTOM_CSS] = PHPWG_ROOT_PATH . PWG_LOCAL_DIR . 'bootstrapdefault/custom.css';
+        $this->files[self::KEY_CUSTOM_CSS] = PHPWG_ROOT_PATH . PWG_LOCAL_DIR . 'csh/custom.css';
     }
 
     public function __set($key, $value) {
