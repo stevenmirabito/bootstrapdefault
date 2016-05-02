@@ -98,13 +98,13 @@ body {
  */
 
 #sidebar {
-    box-shadow: none;
-    z-index: 0;
+    box-shadow: none !important;
+    z-index: 0 !important;
 }
 
 #sidebar .handle {
-    background-color: #b0197e;
-    border: none;
+    background-color: #b0197e !important;
+    border: none !important;
 }
 
 /*
