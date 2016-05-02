@@ -1,6 +1,6 @@
 [submodule "bootstrap"]
 	path = bootstrap
-	url = git@github.com:twbs/bootstrap.git
+	url = https://github.com/twbs/bootstrap.git
 [submodule "selectize.js"]
 	path = selectize.js
-	url = git@github.com:brianreavis/selectize.js.git
+	url = https://github.com/brianreavis/selectize.js.git
