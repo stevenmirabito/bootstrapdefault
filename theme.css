@@ -7,6 +7,10 @@ body {
     background: #fafafa;
 }
 
+body#thePopuphelpPage {
+    padding-top: 50px;
+}
+
 /*
  * Navbar
  */
@@ -37,6 +41,10 @@ body {
 
 .navbar .dropdown li.active > a {
     color: #ffffff !important;
+}
+
+body#thePopuphelpPage .navbar-toggle {
+    display: none;
 }
 
 /*
