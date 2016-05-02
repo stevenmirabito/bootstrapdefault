@@ -11,7 +11,7 @@
     <form method="post" action="{$F_ACTION}" class="form-horizontal" name="register_form">
         <div class="panel panel-primary">
             <div class="panel-heading">
-                {'Enter your personnal informations'|@translate}
+                {'Registration'|@translate}
             </div>
             <div class="panel-body">
                 <div class="form-group">
@@ -43,7 +43,7 @@
                                class="form-control"
                                placeholder="{'Email address'|@translate}"{if $obligatory_user_mail_address} required="required"{/if}>
                         {if not $obligatory_user_mail_address}
-                            ({'useful when password forgotten'|@translate})
+                            ({'useful if you forget your password'|@translate})
                         {/if}
                     </div>
                 </div>
@@ -52,7 +52,7 @@
                         <div class="checkbox">
                             <label>
                                 <input type="checkbox" name="send_password_by_mail" value="1"
-                                       checked="checked"> {'Send my connection settings by email'|@translate}
+                                       checked="checked"> {'Send me a copy of my login information by email'|@translate}
                             </label>
                         </div>
                     </div>
