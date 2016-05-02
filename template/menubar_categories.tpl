@@ -19,6 +19,6 @@
             </li>
         {/foreach}
         <li class="divider"></li>
-        <li><a href="#">{$block->data.NB_PICTURE|@translate_dec:'%d photo':'%d photos'}</a></li>
+        <li>{$block->data.NB_PICTURE|@translate_dec:'%d photo':'%d photos'}</li>
     </ul>
 </li>

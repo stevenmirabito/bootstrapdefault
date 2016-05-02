@@ -38,11 +38,11 @@
             {/if}
             {if isset($U_PROFILE)}
                 <li><a href="{$U_PROFILE}"
-                       title="{'customize the appareance of the gallery'|@translate}">{'Customize'|@translate}</a></li>
+                       title="{'Customize the appearance of the gallery'|@translate}">{'Profile'|@translate}</a></li>
             {/if}
             {if isset($U_ADMIN)}
                 <li><a href="{$U_ADMIN}"
-                       title="{'available for administrators only'|@translate}">{'Administration'|@translate}</a></li>
+                       title="{'Available for administrators only'|@translate}">{'Administration'|@translate}</a></li>
             {/if}
         {/strip}
     </ul>
