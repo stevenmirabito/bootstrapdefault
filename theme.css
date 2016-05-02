@@ -64,8 +64,10 @@ body#thePopuphelpPage .navbar-toggle {
     margin-bottom: 0;
 }
 
-.subnav ul.navbar-nav:first-of-type {
-    margin-left: -15px;
+@media screen and (min-width: 768px) {
+    .subnav ul.navbar-nav:first-of-type {
+        margin-left: -15px;
+    }
 }
 
 /* Fixed subnav on scroll, but only for 980px and up (sorry IE!) */
@@ -79,8 +81,89 @@ body#thePopuphelpPage .navbar-toggle {
     border-radius: 0;
 }
 
-@media (max-width: 979px) {
-    /* TODO: Responsive Subnav */
+.subnav .navbar-nav .open .dropdown-menu > li > a:hover,
+.subnav .navbar-nav .open .dropdown-menu > li > a:focus,
+.subnav .navbar-nav .open .dropdown-menu > .active > a,
+.subnav .navbar-nav .open .dropdown-menu > .active > a:hover,
+.subnav .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff !important;
+    background-color: #e11c52 !important;
+}
+
+/* Make subnav non-responsive */
+.container .subnav .navbar-header,
+.container .subnav .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/* Always float the navbar header */
+.subnav .navbar-header {
+    float: left;
+}
+
+/* Undo the collapsing navbar */
+.subnav .navbar-collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    visibility: visible !important;
+}
+
+.subnav .navbar-toggle {
+    display: none;
+}
+
+.subnav .navbar-collapse {
+    border-top: 0;
+}
+
+.subnav .navbar-brand {
+    margin-left: -15px;
+}
+
+/* Always apply the floated nav */
+.subnav .navbar-nav {
+    float: left;
+    margin: 0;
+}
+
+.subnav .navbar-nav > li {
+    float: left;
+}
+
+.subnav .navbar-nav > li > a {
+    padding: 15px;
+}
+
+/* Redeclare since we override the float above */
+.subnav .navbar-nav.navbar-right {
+    float: right;
+}
+
+/* Undo custom dropdowns */
+.subnav .navbar-nav .open .dropdown-menu {
+    position: absolute;
+    float: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, .15);
+    border-width: 0 1px 1px;
+    border-radius: 0 0 4px 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+.subnav.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+}
+
+.subnav .navbar-nav .open .dropdown-menu > .disabled > a,
+.subnav .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+.subnav .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #999 !important;
+    background-color: transparent !important;
 }
 
 /*
