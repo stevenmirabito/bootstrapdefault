@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" role="navigation"></nav>
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation"></nav>
 
 {include file='infos_errors.tpl'}
 
