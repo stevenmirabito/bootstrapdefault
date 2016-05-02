@@ -29,7 +29,7 @@ class Config {
     const KEY_CUSTOM_CSS = 'custom_css';
 
     private $defaults = array(
-        self::KEY_BOOTSTRAP_THEME => 'default',
+        self::KEY_BOOTSTRAP_THEME => 'csh',
         self::KEY_PICTURE_PAGE => 'normal',
         self::KEY_SOCIAL_ENABLED => true,
         self::KEY_SOCIAL_TWITTER => true,
