@@ -11,12 +11,8 @@
     });
 {/footer_script}
 
-<nav class="navbar navbar-default" role="navigation">
+<nav class="navbar navbar-default subnav subnav-fixed" role="navigation">
     <div class="container">
-        <div class="navbar-header">
-            <div class="navbar-brand"><a href="{$U_HOME}">{'Home'|@translate}</a>{$LEVEL_SEPARATOR}<a
-                        href>{'Search'|@translate}</a></div>
-        </div>
         <div class="navbar-right">
             <ul class="nav navbar-nav">
                 <li>
@@ -33,6 +29,12 @@
 {include file='infos_errors.tpl'}
 
 <div class="container">
+
+    <ol class="breadcrumb">
+        <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+        <li>{'Search'|@translate}</li>
+    </ol>
+
     <form method="post" name="search" action="{$F_SEARCH_ACTION}">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -193,7 +195,7 @@
                 </div>
             </div>
         </div>
-        <input type="submit" name="submit" value="{'Submit'|@translate}" class="btn btn-default btn-primary">
+        <input type="submit" name="submit" value="{'Submit'|@translate}" class="btn btn-csh">
         <input type="reset" value="{'Reset'|@translate}" class="btn btn-default">
     </form>
 </div>
