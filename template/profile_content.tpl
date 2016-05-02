@@ -1,4 +1,9 @@
 <div class="container">
+    <ol class="breadcrumb">
+        <li><a href="{$U_HOME}">{'Home'|@translate}</a></li>
+        <li>{'Profile'|@translate}</li>
+    </ol>
+
     <form method="post" name="profile" action="{$F_ACTION}" id="profile" class="form-horizontal">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -109,7 +114,7 @@
                     </div>
                 </div>
             </div>
-            <input class="btn btn-default btn-primary" type="submit" name="validate" value="{'Submit'|@translate}">
+            <input class="btn btn-csh" type="submit" name="validate" value="{'Submit'|@translate}">
             <input class="btn btn-default" type="reset" name="reset" value="{'Reset'|@translate}">
             <input class="btn btn-default" type="submit" name="reset_to_default"
                    value="{'Reset to default values'|@translate}">
