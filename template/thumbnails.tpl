@@ -42,7 +42,7 @@
                             <a href="{$thumbnail.URL}"
                                class="ellipsis{if !empty($thumbnail.icon_ts)} recent{/if}">{$thumbnail.NAME}</a>
                             {if !empty($thumbnail.icon_ts)}
-                                <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}theme/csh/img/recent.png"
+                                <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}themes/csh/img/recent.png"
                                      alt="(!)">
                             {/if}
                         </h3>
